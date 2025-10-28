@@ -41,3 +41,118 @@ export const tools = [
 
 export const homeDescription =
   "Hi, I am David. I'm a graphics designer and highly talented digital artist with years of experience in the field";
+
+export const approaches = [
+  {
+    id: "1",
+    percentage: "25%",
+    title: "Strategy & Planning",
+    description:
+      "We start by understanding your vision and business goals. Through in-depth research and strategic planning, we define the core structure and key elements needed for your project.",
+  },
+  {
+    id: "2",
+    percentage: "60%",
+    title: "Design & Development",
+    description:
+      "Our team crafts a visually stunning and functional design that aligns with your brand. We focus on responsive layouts, and high-performance development to ensure a smooth experience."
+  },
+  {
+    id: "3",
+    percentage: "100%",
+    title: "Launch & Growth",
+    description:
+      "I take pride in creating solutions that are not only visually stunning® but also highly functional. Every number tells a story, and I’m excited to bring that same dedication."
+  },
+];
+
+export const stats = [
+  {
+    id: "1",
+    number: "6+",
+    title: "Years Experience",
+    info: "In the design industry field."
+  },
+  {
+    id: "2",
+    number: "200+",
+    title: "Projects Done",
+    info: "Around worldwide in last five years."
+  },
+  {
+    id: "3",
+    number: "100%",
+    title: "Satisfied Clients",
+    info: "With a great experience and results."
+  }
+]
+
+export const testimonials = [
+  {
+    id: "1",
+    img: "",
+    name: "",
+    job: "",
+    placeOfWork: "",
+    review: ""
+  },
+  {
+    id: "2",
+    img: "",
+    name: "",
+    job: "",
+    placeOfWork: "",
+    review: ""
+  },
+  {
+    id: "3",
+    img: "",
+    name: "",
+    job: "",
+    placeOfWork: "",
+    review: ""
+  },
+  {
+    id: "4",
+    img: "",
+    name: "",
+    job: "",
+    placeOfWork: "",
+    review: ""
+  },
+  {
+    id: "5",
+    img: "",
+    name: "",
+    job: "",
+    placeOfWork: "",
+    review: ""
+  }
+]
+
+export const works = [
+  {
+    id: "1",
+    img: "",
+    themes: [],
+    year: ""
+  },
+  {
+    id: "2",
+    img: "",
+    themes: [],
+    year: ""
+  },
+  {
+    id: "3",
+    img: "",
+    themes: [],
+    year: ""
+  },
+  {
+    id: "4",
+    img: "",
+    themes: [],
+    year: ""
+  },
+]

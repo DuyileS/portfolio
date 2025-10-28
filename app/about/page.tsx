@@ -1,3 +1,5 @@
+"use client"
+
 import FeaturedStack from "@/components/FeaturedStack";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -10,7 +12,7 @@ const Page = () => {
     <>
       <div className="relative min-h-screen overflow-auto">
         <Image
-          src={"/david_aboutUs.jpg"}
+          src={"/aboutPage.jpg"}
           alt="Background"
           fill
           className="object-cover object-[50%_20%]"
@@ -30,7 +32,7 @@ const Page = () => {
               </p>
             </div>
             <div className="flex flex-col w-1/3">
-              <p className="font-semibold text-3xl text-gray-400">
+              <p className="font-semibold text-3xl text-white">
                 From eye-catching visuals to meaningful design stories, I bring
                 ideas to life with creativity and intention.
               </p>

@@ -1,5 +1,11 @@
+"use client"
+
+import ApproachSection from "@/components/ApproachSection";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Intro from "@/components/Intro";
 import Navbar from "@/components/Navbar";
+import StatsFacts from "@/components/StatsFacts";
 import { homeDescription } from "@/constants";
 import Image from "next/image";
 
@@ -35,6 +41,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Intro />
+      <ApproachSection />
+      <StatsFacts />
+      <Contact />
       <Footer/>
     </>
   );

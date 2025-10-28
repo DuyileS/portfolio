@@ -1,24 +1,26 @@
 import { Icon } from "@iconify/react";
 import React from "react";
+import Number from "./Number";
 
 interface CardProps {
   icon?: string;
   title: string;
   description: string;
   rating?: string;
+  totalLength?: number
 }
 
-const Card = ({icon, title, description, rating}: CardProps) => {
+const Card = ({icon, title, description, rating, totalLength}: CardProps) => {
   return (
-    <div className="flex flex-col rounded-xl bg-gray-200 border-0 p-4">
+    <div className="flex flex-col rounded-xl bg-[#e3e3e3] border-0 p-4">
       <div className="flex justify-between items-start mx-4">
         <div className="rounded-md p-2 bg-gray-500">
           <Icon 
-            icon={icon || "mdi:help-circle"} 
+            icon={icon || ""} 
             className="w-6 h-6 text-white"
           />
         </div>
-        <p>OOOO</p>
+        <Number id={rating} totalNum={totalLength} />
       </div>
       <div className="mt-20 mb-6 mx-4">
         <p className="flex items-center mb-3">

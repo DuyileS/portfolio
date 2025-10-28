@@ -1,3 +1,6 @@
+"use client"
+
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
@@ -7,12 +10,12 @@ const year = new Date().getFullYear();
 const Page = () => {
   return (
     <>
-      <div className="relative min-h-screen overflow-auto">
+      <div className="relative h-auto md:min-h-screen lg:min-h-screen overflow-auto">
         <Image
-          src={"/david_aboutUs.jpg"}
+          src={"/contactPage.jpg"}
           alt="Background"
           fill
-          className="object-cover object-[50%_20%]"
+          className="object-cover object-[50%_10%]"
           quality={100}
           priority
         />
@@ -29,7 +32,7 @@ const Page = () => {
               </p>
             </div>
             <div className="flex flex-col w-1/3">
-              <p className="font-semibold text-3xl text-gray-400">
+              <p className="font-semibold text-3xl text-white">
                 I’d love to hear from you! Whether you’re looking to
                 collaborate, discuss an idea, or simply connect, feel free to
                 reach out.
@@ -38,6 +41,7 @@ const Page = () => {
           </div>
         </div>
       </div>
+      <Contact />
       <Footer />
     </>
   );
