@@ -40,11 +40,12 @@ export const tools = [
 ];
 
 export const homeDescription =
-  "Hi, I am David. I'm a graphics designer and highly talented digital artist with years of experience in the field";
+  "Hi, I am David. I'm a graphics designer and highly talented digital artist with years of experience in the field.";
 
 export const approaches = [
   {
     id: "1",
+    icon: "mdi:target",
     percentage: "25%",
     title: "Strategy & Planning",
     description:
@@ -52,6 +53,7 @@ export const approaches = [
   },
   {
     id: "2",
+    icon: "mdi:ruler-square",
     percentage: "60%",
     title: "Design & Development",
     description:
@@ -59,6 +61,7 @@ export const approaches = [
   },
   {
     id: "3",
+    icon: "mdi:trending-up",
     percentage: "100%",
     title: "Launch & Growth",
     description:
@@ -90,69 +93,73 @@ export const stats = [
 export const testimonials = [
   {
     id: "1",
-    img: "",
-    name: "",
-    job: "",
-    placeOfWork: "",
-    review: ""
+    img: "/man-on-red.png", 
+    name: "Ayo Balogun",
+    job: "Creative Director",
+    placeOfWork: "Lagos Digital Hub",
+    review: "The designer consistently delivers visually stunning work, that captures the essence of the Nigerian brand aesthetic. Their turnaround time for complex projects, like our recent annual report, was exceptionally fast and professional."
   },
   {
     id: "2",
-    img: "",
-    name: "",
-    job: "",
-    placeOfWork: "",
-    review: ""
+    img: "/woman-on-chair.png", 
+    name: "Hadiza Musa",
+    job: "Small Business Owner",
+    placeOfWork: "Arewa Textiles Market, Kano",
+    review: "I needed a logo and packaging that respected my cultural background while looking modern. This designer blended the traditional Arewa patterns perfectly. My product sales have significantly improved thanks to the strong visual branding."
   },
   {
     id: "3",
-    img: "",
-    name: "",
-    job: "",
-    placeOfWork: "",
-    review: ""
+    img: "/man-on-seat.png", 
+    name: "Chinedu Okoro",
+    job: "Marketing Manager",
+    placeOfWork: "FinTech Startup, Lekki",
+    review: "David's work on our UI/UX assets was phenomenal. He has a deep understanding of mobile-first design and made our application intuitive for the Nigerian user. The revision process was smooth and collaborative."
   },
   {
     id: "4",
-    img: "",
-    name: "",
-    job: "",
-    placeOfWork: "",
-    review: ""
+    img: "/woman-on-green.png", 
+    name: "Tola Adebayo",
+    job: "Social Media Strategist",
+    placeOfWork: "Pulse Ng Media Group",
+    review: "The quality of the graphics for our daily content is always high-resolution and optimized for all platforms. The designer's ability to create viral-ready content and infographics, on tight deadlines is a major asset to our newsroom."
   },
   {
     id: "5",
-    img: "",
-    name: "",
-    job: "",
-    placeOfWork: "",
-    review: ""
+    img: "/man-on-street.png", 
+    name: "Imoh Edet",
+    job: "Brand Strategist",
+    placeOfWork: "Major Oil & Gas Firm, PHC",
+    review: "Managing corporate branding can be tedious, but this designer ensured consistency across all our collaterals, from presentations to billboards. Their professionalism and attention to detail are truly commendable."
   }
-]
+];
 
 export const works = [
   {
     id: "1",
-    img: "",
-    themes: [],
-    year: ""
+    name: "Music",
+    img: "/music.png",
+    themes: ["Artistic", "Inspiration"], 
+    year: "2022"
   },
   {
     id: "2",
-    img: "",
-    themes: [],
-    year: ""
+    name: "Knowledge",
+    img: "/knowledge.png",
+    themes: ["Education", "Learning"], 
+    year: "2023"
   },
   {
     id: "3",
-    img: "",
-    themes: [],
-    year: ""
+    name: "Wisdom",
+    img: "/wisdom.png",
+    themes: ["Philosophy", "Growth"], 
+    year: "2024"
   },
   {
     id: "4",
-    img: "",
-    themes: [],
-    year: ""
+    name: "Wildlife",
+    img: "/wildlife.png",
+    themes: ["Nature", "Conservation"], 
+    year: "2025"
   },
 ]

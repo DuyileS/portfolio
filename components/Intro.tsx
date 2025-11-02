@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const Intro = () => {
   return (
-    <div className="h-full lg:min-h-screen p-4">
+    <div className="h-full lg:min-h-screen 2xl:min-h-0 2xl:h-full p-4">
       <hr className="text-gray-200" />
-      <div className="grid grid-cols-[30%_70%] items-start mt-8">
+      <div className="grid grid-cols-1 lg:grid-cols-[30%_70%] gap-2 items-start mt-8">
         <p className="flex items-center">
           <span>
             <Icon
@@ -18,7 +18,7 @@ const Intro = () => {
           <span className="font-medium">Hey, Just An Intro</span>
         </p>
         <div className="space-y-8">
-          <h1 className="font-bold text-5xl">
+          <h1 className="font-bold text-3xl my-0 md:my-10 lg:my-0 md:text-5xl pb-4">
             <span className="pl-24">A digital designer based in Lagos, passionate about creating
             immersive visual experiences. From crafting realistic renderings to
             dynamic animations and interactions.®</span>
@@ -26,7 +26,7 @@ const Intro = () => {
           <Link href={"/contact"}>
              <AnimatedButton />
           </Link>
-          <div className="flex gap-4 mt-4">
+          <div className="flex flex-col md:flex-row gap-4 mt-4">
             <div className="space-y-4">
               <hr className="text-gray-200 w-3/4" />
               <p className="font-semibold">Bringing Ideas to Life</p>

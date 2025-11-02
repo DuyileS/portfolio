@@ -9,7 +9,7 @@ const ApproachSection = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div className="h-auto md:min-h-screen lg:min-h-screen xl:h-auto py-4 px-8">
+    <div className="h-auto lg:min-h-screen 2xl:min-h-0 2xl:h-full py-4 px-8">
       <div className="flex justify-between">
         <p className="flex items-center">
           <span>
@@ -25,22 +25,23 @@ const ApproachSection = () => {
           {year}
         </p>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-3 w-full gap-4 mt-12 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 mt-12 md:mx-auto">
         {approaches.map((approach) => (
           <Card
             key={approach.id}
             title={approach.title}
             description={approach.description}
+            icon={approach.icon}
             rating={approach.id}
             totalLength={approaches.length}
           />
         ))}
       </div>
-      <div className="flex justify-between items-center mt-24">
+      <div className="flex flex-col-reverse md:flex-row md:justify-between md:items-center gap-8 md:gap-0 mt-24">
         <Link href={"/contact"}>
             <AnimatedButton />
         </Link>
-        <div className="border border-gray-200 w-1/2 border-x-0">
+        <div className="border border-gray-200 md:w-1/2 border-x-0">
           {approaches.map((approach, index: number) => (
             <React.Fragment key={approach.id}>
               <div className="flex justify-between py-5">

@@ -3,6 +3,7 @@ import Link from "next/link"
 import AnimatedButton from "./AnimatedButton"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
+import { Icon } from "@iconify/react"
 
 const Navbar = () => {
 
@@ -15,11 +16,11 @@ const Navbar = () => {
           src={"/logo.png"}
           alt="Logo"
           height={40}
-          width={60}
+          width={80}
           quality={100}
         />
        </Link>
-       <div className="flex items-center">
+       <div className="hidden md:flex items-center">
           <ul className="flex justify-center gap-16 mr-16">
             {links.map((link) => {
 
@@ -43,6 +44,7 @@ const Navbar = () => {
             <AnimatedButton />
           </Link>
        </div>
+       <Icon icon="mdi:menu" className="w-10 h-10 md:hidden" />
     </nav>
   )
 }

@@ -4,9 +4,9 @@ import React from "react";
 
 const StatsFacts = () => {
   return (
-    <div className="h-auto md:min-h-screen lg:min-h-screen xl:h-auto py-4 px-8">
+    <div className="h-auto lg:min-h-screen 2xl:min-h-0 2xl:h-full py-4 px-8">
       <hr className="mt-30 text-gray-200" />
-      <div className="grid grid-cols-[30%_70%] items-start mt-8">
+      <div className="grid grid-cols-1 lg:grid-cols-[30%_70%] gap-1 items-start mt-8">
         <p className="flex items-center">
           <span>
             <Icon
@@ -17,7 +17,7 @@ const StatsFacts = () => {
           <span className="font-medium">Stats & Facts</span>
         </p>
         <div className="space-y-8">
-          <h1 className="font-bold text-5xl">
+          <h1 className="font-bold text-xl md:text-5xl md:mt-8">
             <span className="pl-24">
               I take pride in creating solutions that are not only visually
               stunning® but also highly functional. Every number tells a story,
@@ -26,7 +26,7 @@ const StatsFacts = () => {
           </h1>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row gap-6 my-24">
+      <div className="flex flex-col md:flex-row lg:flex-row gap-6 my-24">
         {stats.map((stat) => (
             <div key={stat.id} className="flex flex-col space-y-6 w-full lg:px-12">
                 <p className="font-bold text-8xl">{stat.number}</p>

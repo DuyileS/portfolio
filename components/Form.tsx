@@ -63,7 +63,7 @@ const Form = () => {
         <input
           type="text"
           name="name"
-          className="p-4 border-0 rounded-lg focus:border-none focus:ring-0 w-3/4 bg-[#e3e3e3] placeholder:font-semibold"
+          className="p-4 border-0 rounded-lg focus:border-none focus:ring-0 w-full md:w-3/4 bg-[#e3e3e3] placeholder:font-semibold"
           placeholder="Name*"
           value={formData.name}
           onChange={handleChange}
@@ -72,7 +72,7 @@ const Form = () => {
         <input
           type="email"
           name="email"
-          className="p-4 border-0 rounded-lg focus:border-none focus:ring-0 focus:outline-none w-3/4 bg-[#e3e3e3] placeholder:font-semibold"
+          className="p-4 border-0 rounded-lg focus:border-none focus:ring-0 focus:outline-none w-full md:w-3/4 bg-[#e3e3e3] placeholder:font-semibold"
           placeholder="Email*"
           value={formData.email}
           onChange={handleChange}
@@ -80,14 +80,14 @@ const Form = () => {
         />
         <textarea
           name="message"
-          className="px-4 pt-4 pb-12 border-0 rounded-lg focus:border-none focus:ring-0 focus:outline-none w-3/4 bg-[#e3e3e3] placeholder:font-semibold"
+          className="px-4 pt-4 pb-12 border-0 rounded-lg focus:border-none focus:ring-0 focus:outline-none w-full md:w-3/4 bg-[#e3e3e3] placeholder:font-semibold"
           placeholder="Message*"
           value={formData.message}
           onChange={handleChange}
           required
         />
         <button 
-          className="text-xl border rounded-xl w-3/4 py-4 text-white bg-black hover:bg-gray-800 transition-colors disabled:opacity-50"
+          className="text-xl border rounded-xl w-full md:w-3/4 py-4 text-white bg-black hover:bg-gray-800 transition-colors disabled:opacity-50"
           type="submit"
           disabled={ isSubmitting}>
           {isSubmitting ? "Submitting..." : "Submit Now"}

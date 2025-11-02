@@ -7,7 +7,7 @@ const year = new Date().getFullYear();
 
 const FeaturedStack = () => {
   return (
-    <div className="h-full lg:min-h-screen p-4">
+    <div className="h-full md:min-h-screen 2xl:min-h-0 2xl:h-full p-4">
       <div className="flex justify-between">
         <p className="flex items-center">
           <span>
@@ -36,11 +36,11 @@ const FeaturedStack = () => {
         <h1 className="text-center font-bold text-6xl mt-8">Favourite Tools</h1>
         <p className="text-center mt-4 text-gray-500 font-medium">
           My favorite stack include Adobe Photoshop, After Effects, and other
-          cutting-edge technologies to ensure seamless <br /> and dynamic
+          cutting-edge technologies to ensure seamless <br className="hidden lg:block" /> and dynamic
           designs.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 w-full lg:max-w-[60%] gap-4 mt-4 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full lg:max-w-[60%] gap-4 mt-4 mx-auto">
         {tools.map((tool) => (
           <Card
             key={tool.id}

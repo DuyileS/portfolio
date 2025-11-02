@@ -1,15 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 const config = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./index.html",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        palanquin: ['Palanquin', 'sans-serif'],
-        montserrat: ['Montserrat', 'sans-serif'],
+        'monigue': ['Monigue', 'sans-serif'],
+        'typologic': ['Typologic', 'sans-serif'],
+        'sf-pro-display': ['SF Pro Display', 'sans-serif'],
       },
       keyframes: {
         bounceOnce: {
@@ -18,7 +20,7 @@ const config = {
         },
       },
       animation: {
-        bounceOnce: 'bounceOnce 0.6s ease-in-out 1', // duration 0.6s, runs once
+        bounceOnce: 'bounceOnce 0.6s ease-in-out 1',
       },
       colors: {
         'primary': "#5b1219",
@@ -28,12 +30,9 @@ const config = {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
       },
       backgroundImage: {
-        'hero': "url('assets/images/collection-background.svg')",
-        'card': "url('assets/images/thumbnail-background.svg')",
+        'hero': "url('/images/collection-background.svg')",
+        'card': "url('/images/thumbnail-background.svg')",
       },
-      screens: {
-        "wide": "1440px"
-      }
     },
   },
   plugins: [],

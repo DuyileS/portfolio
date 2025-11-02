@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
     await transporter.sendMail({
       from: `"${name}" <${process.env.SENDER_EMAIL}>`, 
       replyTo: email, 
-      to: "duyile35@gmail.com", 
+      to: "davidmomodu.psd@gmail.com", 
       subject: `New Message from Portfolio Site from ${name}`,
       html: `
         <p><strong>Name:</strong> ${name}</p>
@@ -35,8 +35,6 @@ export async function POST(request: NextRequest) {
         <p>${message}</p>
       `,
     });
-    
-    console.log("creds", process.env.SMTP_PASSWORD, process.env.SENDER_EMAIL);
     
     return NextResponse.json({ message: 'Email sent successfully!' });
   } 

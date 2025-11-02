@@ -7,7 +7,7 @@ const Contact = () => {
 const year = new Date().getFullYear();
 
   return (
-    <div className="h-auto md:min-h-screen lg:min-h-screen xl:h-auto py-4 px-8">
+    <div className="h-auto md:h-auto md:pb-8 lg:pb-0 lg:min-h-screen 2xl:min-h-0 2xl:h-full py-4 px-8">
       <div className="flex justify-between">
         <p className="flex items-center">
           <span>
@@ -42,7 +42,7 @@ const year = new Date().getFullYear();
             <span className="font-bold text-3xl">Address</span>
           </p>
           <p className="ml-8 font-semibold text-lg text-gray-500 mb-4">Lagos, Nigeria</p>
-          <hr className='text-gray-200 w-3/4' />
+          <hr className='text-gray-200 w-3/4 pb-4' />
         </div>
         <Form />
       </div>

@@ -28,9 +28,23 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/logo.png" />
+        <link
+          rel="preload"
+          href="/fonts/Monigue.otf"
+          as="font"
+          type="font/otf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Typologic.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         {children}
         <ToastContainer />

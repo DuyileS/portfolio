@@ -13,41 +13,51 @@ const Footer = () => {
   ];
 
   return (
-    <div className="mx-4 p-4 md:min-h-screen lg:min-h-screen text-black bg-[#F5F5F5] rounded [background-image:linear-gradient(45deg,rgba(0,0,0,0.05)_25%,transparent_25%),linear-gradient(135deg,rgba(0,0,0,0.05)_25%,transparent_25%),linear-gradient(45deg,transparent_75%,rgba(0,0,0,0.05)_75%),linear-gradient(135deg,transparent_75%,rgba(0,0,0,0.05)_75%)]
-  [background-size:2px_2px]">
-      <div className="flex justify-between items-center py-6">
-        <div className="space-y-6">
+    <div
+      className="mx-4 p-4 md:h-auto lg:min-h-screen 2xl:min-h-0 2xl:max-h-full text-black bg-[#F5F5F5] rounded [background-image:linear-gradient(45deg,rgba(0,0,0,0.05)_25%,transparent_25%),linear-gradient(135deg,rgba(0,0,0,0.05)_25%,transparent_25%),linear-gradient(45deg,transparent_75%,rgba(0,0,0,0.05)_75%),linear-gradient(135deg,transparent_75%,rgba(0,0,0,0.05)_75%)]
+  [background-size:2px_2px]"
+    >
+      <div className="flex flex-col md:flex-row justify-between items-center py-6">
+        <div className="space-y-6 px-8">
           <div>
             <p className="text-4xl font-bold text-gray-600">Stay Connected</p>
             <Link href={"mailto:davidmomodu08@gmail.com"}>
               <p className="underline text-xl font-medium">
-                davidmomodu08@gmail.com
+                davidmomodu.psd@gmail.com
               </p>
             </Link>
           </div>
           <p>
             Crafted with creativity and passion. Let&apos;s stay connected
-            <br />
-            reach out anytime
+            <br className="hidden md:block" />
+            {" "}reach out anytime
           </p>
           <div className="flex items-center gap-x-6">
             <Link href={"/contact"}>
-             <AnimatedButton />
+              <AnimatedButton />
             </Link>
             <div className="flex gap-x-2">
-              <Link href={"https://www.instagram.com/davidmomodu.psd?utm_source=qr&igsh=MWQ5aGthMjM1aDdkdA=="}>
-                <Icon icon="mdi:instagram" className="w-8 h-8 text-[#5b1219]"/>
+              <Link
+                href={
+                  "https://www.instagram.com/davidmomodu.psd?utm_source=qr&igsh=MWQ5aGthMjM1aDdkdA=="
+                }
+              >
+                <Icon icon="mdi:instagram" className="w-8 h-8 text-[#5b1219]" />
               </Link>
               <Link href={"https://wa.me/2349054473098"}>
-                <Icon icon="mdi:whatsapp" className="w-8 h-8 text-[#5b1219]"/>
+                <Icon icon="mdi:whatsapp" className="w-8 h-8 text-[#5b1219]" />
               </Link>
-               <Link href={"https://www.facebook.com/profile.php?id=100019062076189&mibextid=ZbWKwL"}>
-                <Icon icon="mdi:facebook" className="w-8 h-8 text-[#5b1219]"/>
+              <Link
+                href={
+                  "https://www.facebook.com/profile.php?id=100019062076189&mibextid=ZbWKwL"
+                }
+              >
+                <Icon icon="mdi:facebook" className="w-8 h-8 text-[#5b1219]" />
               </Link>
             </div>
           </div>
         </div>
-        <div className="w-[40%] border border-x-0">
+        <div className="w-full mt-4 md:mt-0 md:w-[40%] border border-x-0 mr-8">
           {updatedLinks.map((link, index: number) => (
             <React.Fragment key={index}>
               <div className="flex justify-between py-2">
@@ -64,25 +74,28 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <hr />
-      <div className="flex justify-between items-center py-4">
+      <hr className="hidden md:block" />
+      <div className="flex justify-between 2xl:justify-around items-center py-4 px-8">
         <Link href={"/"}>
-          <Image 
+          <Image
             src={"/logo.png"}
             alt="Logo turned black"
-            height={"50"}
-            width={250}
             quality={100}
-            className="filter invert ml-32"
+            height={50} 
+            width={250}
+            layout="responsive"
+            className="filter hidden md:inline invert md:ml-24 lg:ml-24"
           />
         </Link>
-        <video width="640" height="200" autoPlay loop muted>
-          <source src="/footer-gif.mp4" type="video/mp4" />
-          <p></p>
-        </video>
+        <div className="rounded">
+          <video className="h-[250px] 2xl:h-full w-full 2xl:w-xl rounded-lg" autoPlay loop muted>
+            <source src="/footer-gif.mp4" type="video/mp4" />
+            <p></p>
+          </video>
+        </div>
       </div>
       <hr />
-      <p className="py-4 text-xl font-bold">Copyright &copy;{year}</p>
+      <p className="py-4 text-xl font-bold px-8">Copyright &copy;{year}</p>
     </div>
   );
 };

@@ -10,7 +10,7 @@ const year = new Date().getFullYear();
 const Page = () => {
   return (
     <>
-      <div className="relative h-auto md:min-h-screen lg:min-h-screen overflow-auto">
+      <div className="relative">
         <Image
           src={"/contactPage.jpg"}
           alt="Background"
@@ -21,27 +21,31 @@ const Page = () => {
         />
         <div className="relative z-10 px-8 py-12 text-white">
           <Navbar />
-          <div className="flex justify-between items-center mt-80">
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center pt-80 md:pt-80 lg:pt-64">
             <div className="flex flex-col gap-1">
               <p className="font-semibold text-2xl">
                 <span className="text-white">&copy;</span>
                 {year}
               </p>
-              <p className="text-white font-bold text-8xl">
+              <p className="text-white font-bold text-[56px] lg:text-8xl">
                 Contact Me<span className="text-[#5b1219]">*</span>
               </p>
             </div>
-            <div className="flex flex-col w-1/3">
-              <p className="font-semibold text-3xl text-white">
-                I’d love to hear from you! Whether you’re looking to
-                collaborate, discuss an idea, or simply connect, feel free to
-                reach out.
+            <div className="flex flex-col mt-8 md:mt-0 lg:w-[40%]">
+              <p className="font-semibold text-xl lg:text-2xl text-white">
+                <span className="lg:pl-24">
+                  I’d love to hear from you! Whether you’re looking to
+                  collaborate, discuss an idea, or simply connect, feel free to
+                  reach out.
+                </span>
               </p>
             </div>
           </div>
         </div>
       </div>
-      <Contact />
+      <div className="mb-16">
+        <Contact />
+      </div>
       <Footer />
     </>
   );
