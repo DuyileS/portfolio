@@ -1,6 +1,7 @@
 import { stats } from "@/constants";
 import { Icon } from "@iconify/react";
 import React from "react";
+import OdometerCounter from "./OdometerCounter";
 
 const StatsFacts = () => {
   return (
@@ -29,7 +30,7 @@ const StatsFacts = () => {
       <div className="flex flex-col md:flex-row lg:flex-row gap-6 my-24">
         {stats.map((stat) => (
             <div key={stat.id} className="flex flex-col space-y-6 w-full lg:px-12">
-                <p className="font-bold text-8xl">{stat.number}</p>
+                <OdometerCounter value={stat.number} suffix={stat.suffix}/>
                 <hr className="text-gray-200" />
                 <div className="flex flex-col gap-1">
                     <p className="font-semibold text-2xl">{stat.title}</p>

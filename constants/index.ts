@@ -72,19 +72,22 @@ export const approaches = [
 export const stats = [
   {
     id: "1",
-    number: "6+",
+    number: 6,
+    suffix: "+",
     title: "Years Experience",
     info: "In the design industry field."
   },
   {
     id: "2",
-    number: "200+",
+    number: 200,
+    suffix: "+",
     title: "Projects Done",
     info: "Around worldwide in last five years."
   },
   {
     id: "3",
-    number: "100%",
+    number: 100,
+    suffix: "%",
     title: "Satisfied Clients",
     info: "With a great experience and results."
   }
@@ -145,7 +148,7 @@ export const works = [
     id: "2",
     name: "Knowledge",
     img: "/knowledge.png",
-    themes: ["Education", "Learning"], 
+    themes: ["Facts", "Learning"], 
     year: "2023"
   },
   {

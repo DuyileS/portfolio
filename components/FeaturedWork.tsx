@@ -2,6 +2,7 @@ import { works } from "@/constants";
 import { Icon } from "@iconify/react";
 import React from "react";
 import WorkCard from "./WorkCard";
+import StackedCards from "./StackedCards";
 
 const FeaturedWork = () => {
   const year = new Date().getFullYear();
@@ -23,7 +24,7 @@ const FeaturedWork = () => {
           {year}
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-6">
+      <div className="grid grid-cols-1 lg:hidden gap-4 mx-6">
         {works.map((work) => (
           <React.Fragment key={work.id}>
             <WorkCard
@@ -36,6 +37,9 @@ const FeaturedWork = () => {
             />
           </React.Fragment>
         ))}
+      </div>
+      <div className="hidden lg:block h-full mb-20">
+        <StackedCards />
       </div>
     </div>
   );
