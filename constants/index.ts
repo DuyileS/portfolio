@@ -1,7 +1,7 @@
 export const links = [
   { label: "Home", number: "01", href: "/" },
   { label: "About", number: "02", href: "/about" },
-  { label: "Works", number: "03", href: "/works" },
+  { label: "Projects", number: "03", href: "/projects" },
 ];
 
 export const tools = [

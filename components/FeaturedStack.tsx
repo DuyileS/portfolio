@@ -7,7 +7,7 @@ const year = new Date().getFullYear();
 
 const FeaturedStack = () => {
   return (
-    <div className="h-full md:min-h-screen 2xl:min-h-0 2xl:h-full p-4">
+    <div className="h-full font-sf-pro md:min-h-screen 2xl:min-h-0 2xl:h-full p-4">
       <div className="flex justify-between">
         <p className="flex items-center">
           <span>

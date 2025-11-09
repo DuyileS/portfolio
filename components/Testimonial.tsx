@@ -7,7 +7,7 @@ const Testimonial = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div className="p-4 lg:min-h-screen 2xl:min-h-0 2xl:h-full">
+    <div className="p-4 font-sf-pro lg:min-h-screen 2xl:min-h-0 2xl:h-full">
       <div className="flex justify-between">
         <p className="flex items-center">
           <span>

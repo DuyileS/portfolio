@@ -7,7 +7,7 @@ const Contact = () => {
 const year = new Date().getFullYear();
 
   return (
-    <div className="h-auto md:h-auto md:pb-8 lg:pb-0 lg:min-h-screen 2xl:min-h-0 2xl:h-full py-4 px-8">
+    <div className="h-auto font-sf-pro md:h-auto md:pb-8 lg:pb-0 lg:min-h-screen 2xl:min-h-0 2xl:h-full py-4 px-8">
       <div className="flex justify-between">
         <p className="flex items-center">
           <span>

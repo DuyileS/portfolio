@@ -5,7 +5,7 @@ import OdometerCounter from "./OdometerCounter";
 
 const StatsFacts = () => {
   return (
-    <div className="h-auto lg:min-h-screen 2xl:min-h-0 2xl:h-full py-4 px-8">
+    <div className="h-auto font-sf-pro lg:min-h-screen 2xl:min-h-0 2xl:h-full py-4 px-8">
       <hr className="mt-30 text-gray-200" />
       <div className="grid grid-cols-1 lg:grid-cols-[30%_70%] gap-1 items-start mt-8">
         <p className="flex items-center">

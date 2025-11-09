@@ -4,23 +4,19 @@ import {
   createContext,
   useContext,
   useEffect,
-  useRef,
   useState,
   ReactNode,
 } from "react";
 import { usePathname } from "next/navigation";
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface TransitionContextType {}
 
 interface ProviderProps {
   children: ReactNode;
 }
 
-// ---- Context with safe default ---- //
 const TransitionContext = createContext<TransitionContextType>({});
 
-// ---- Hook ---- //
 export function useTransitionRouter() {
   return useContext(TransitionContext);
 }
@@ -28,19 +24,12 @@ export function useTransitionRouter() {
 // ---- Provider ---- //
 export default function TransitionProvider({ children }: ProviderProps) {
   const pathname = usePathname();
-  const firstLoad = useRef(true);
 
   const [showOverlay, setShowOverlay] = useState(false);
   const [closing, setClosing] = useState(false);
 
   useEffect(() => {
-    // ✅ Do NOT animate on first load / refresh
-    if (firstLoad.current) {
-      firstLoad.current = false;
-      return;
-    }
 
-    // ✅ Slide in
     setShowOverlay(true);
     setClosing(false);
 
@@ -61,7 +50,6 @@ export default function TransitionProvider({ children }: ProviderProps) {
 
   return (
     <TransitionContext.Provider value={{}}>
-      {/* ✅ Overlay animation */}
       {showOverlay && (
         <div
           className={`
@@ -75,7 +63,6 @@ export default function TransitionProvider({ children }: ProviderProps) {
         ></div>
       )}
 
-      {/* ✅ Prevent the new page from showing early */}
       <div
         className={`
           transition-opacity duration-300

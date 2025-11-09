@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative flex justify-between items-center z-15">
+    <nav className="relative flex font-sf-pro justify-between items-center z-15">
       <Link href={"/"}>
         <Image
           src={"/logo.png"}

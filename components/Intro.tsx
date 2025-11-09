@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Intro = () => {
   return (
-    <div className="h-full lg:min-h-screen 2xl:min-h-0 2xl:h-full p-4">
+    <div className="h-full font-sf-pro lg:min-h-screen 2xl:min-h-0 2xl:h-full p-4">
       <hr className="text-gray-200" />
       <div className="grid grid-cols-1 lg:grid-cols-[30%_70%] gap-2 items-start mt-8">
         <p className="flex items-center">

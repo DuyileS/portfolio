@@ -23,15 +23,15 @@ const Page = () => {
           <Navbar />
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center pt-80 md:pt-80 lg:pt-64">
             <div className="flex flex-col gap-1">
-              <p className="font-semibold text-2xl">
+              <p className="font-semibold font-typologic text-2xl">
                 <span className="text-white">&copy;</span>
                 {year}
               </p>
-              <p className="text-white font-bold text-4xl md:text-6xl lg:text-[80px]">
+              <p className="text-white font-typologic tracking-wider font-bold text-4xl md:text-6xl lg:text-[80px]">
                 About David<span className="text-[#5b1219]">*</span>
               </p>
             </div>
-            <div className="flex flex-col mt-8 md:mt-0 lg:w-1/3">
+            <div className="flex flex-col font-sf-pro mt-8 md:mt-0 lg:w-1/3">
               <p className="font-semibold text-lg md:text-xl lg:text-2xl text-white">
                 <span className="lg:pl-24">From eye-catching visuals to meaningful design stories, I bring
                 ideas to life with creativity and intention.</span>

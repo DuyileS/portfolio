@@ -9,7 +9,7 @@ const ApproachSection = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div className="h-auto lg:min-h-screen 2xl:min-h-0 2xl:h-full py-4 px-8">
+    <div className="h-auto font-sf-pro lg:min-h-screen 2xl:min-h-0 2xl:h-full py-4 px-8">
       <div className="flex justify-between">
         <p className="flex items-center">
           <span>

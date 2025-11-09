@@ -2,30 +2,31 @@
 
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Typologic";
+  src: url("/fonts/Typologic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monigue";
+  src: url("/fonts/Monigue.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --font-typologic: Typologic, sans-serif;
+  --font-monigue: Monigue, sans-serif;
+  --font-sf-pro: SF Pro Display, sans-serif;
+}
 
 [data-nextjs-dialog] {
   display: none !important;
 }
 
-/* @font-face {
-  font-family: "Monigue";
-  src: url("/fonts/Monigue.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-} */
 
-
-
-/* @font-face {
-  font-family: "Typologic";
-  src: url("/fonts/Typologic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-} */
-
-body {
-  font-family: 'SF Pro Display', sans-serif;
-}
 
 
 input:-webkit-autofill,

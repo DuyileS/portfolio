@@ -8,7 +8,7 @@ const FeaturedWork = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div className="lg:min-h-screen 2xl:min-h-0 2xl:h-full p-4">
+    <div className="lg:min-h-screen font-sf-pro 2xl:min-h-0 2xl:h-full p-4">
       <div className="flex justify-between mb-8">
         <p className="flex items-center">
           <span>

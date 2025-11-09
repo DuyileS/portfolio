@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <div
-      className="mx-4 p-4 md:h-auto lg:min-h-screen 2xl:min-h-0 2xl:max-h-full text-black bg-[#F5F5F5] rounded [background-image:linear-gradient(45deg,rgba(0,0,0,0.05)_25%,transparent_25%),linear-gradient(135deg,rgba(0,0,0,0.05)_25%,transparent_25%),linear-gradient(45deg,transparent_75%,rgba(0,0,0,0.05)_75%),linear-gradient(135deg,transparent_75%,rgba(0,0,0,0.05)_75%)]
+      className="mx-4 font-sf-pro p-4 md:h-auto lg:min-h-screen 2xl:min-h-0 2xl:max-h-full text-black bg-[#F5F5F5] rounded [background-image:linear-gradient(45deg,rgba(0,0,0,0.05)_25%,transparent_25%),linear-gradient(135deg,rgba(0,0,0,0.05)_25%,transparent_25%),linear-gradient(45deg,transparent_75%,rgba(0,0,0,0.05)_75%),linear-gradient(135deg,transparent_75%,rgba(0,0,0,0.05)_75%)]
   [background-size:2px_2px]"
     >
       <div className="flex flex-col md:flex-row justify-between items-center py-6">
