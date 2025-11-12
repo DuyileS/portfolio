@@ -222,7 +222,7 @@ export const features = [
     id: "2",
     name: "More Than Conquerors",
     img: "/mtc_preview.png",
-    themes: ["Victory", "Legacy"], 
+    themes: ["Victory", "Pride"], 
     href: "/projects/more-than-conquerors",
     year: "2024"
   },
