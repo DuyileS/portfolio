@@ -22,7 +22,7 @@ const Page = () => {
         />
         <div className="relative z-10 px-8 py-12 text-white">
           <Navbar />
-          <div className="flex flex-col space-y-4 pt-80 md:pt-80 lg:pt-64">
+          <div className="flex flex-col space-y-4 pt-80 md:pt-80 lg:pt-36">
             <div className="flex flex-col font-typologic space-y-4 gap-1">
               <div className="flex rounded-md bg-red-200/50 backdrop-blur-sm shadow-lg w-32 h-8 justify-center text-center items-center gap-2 p-2">
                 <Icon
@@ -36,7 +36,7 @@ const Page = () => {
               </p>
             </div>
             <hr className="text-white w-[30%]" />
-            <div className="flex font-sf-pro flex-col mt-8 md:mt-0 lg:w-[40%]">
+            <div className="flex font-sf-pro flex-col mt-8 md:mt-0">
               <p className="font-semibold text-lg lg:text-2xl text-white">
                 Tashabite is a fast-food brand that delivers freshly prepared,
                 flavorful, and satisfying meals to a youthful urban audience.
@@ -45,7 +45,7 @@ const Page = () => {
                 street energy and slang.
               </p>
             </div>
-            <div className="flex gap-4 mt-2 flex-wrap">
+            <div className="flex font-sf-pro gap-4 mt-2 flex-wrap">
               <div className="rounded-full p-3 bg-white/20">
                 <p className="font-semibold text-black">Food</p>
               </div>

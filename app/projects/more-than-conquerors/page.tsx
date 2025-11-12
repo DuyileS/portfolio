@@ -13,7 +13,7 @@ const Page = () => {
     <>
       <div className="relative">
         <Image
-          src={"/BlackSymbol.png"}
+          src={"/mtc_preview.png"}
           alt="Background"
           fill
           className="object-cover object-center md:object-[45%_30%]"
@@ -22,7 +22,7 @@ const Page = () => {
         />
         <div className="relative z-10 px-8 py-12 text-white">
           <Navbar />
-          <div className="flex flex-col space-y-4 pt-80 md:pt-80 lg:pt-64">
+          <div className="flex flex-col space-y-4 pt-80 md:pt-80 lg:pt-36">
             <div className="flex flex-col font-typologic space-y-4 gap-1">
               <div className="flex rounded-md bg-red-200/50 backdrop-blur-sm shadow-lg w-32 h-8 justify-center text-center items-center gap-2 p-2">
                 <Icon
@@ -32,20 +32,21 @@ const Page = () => {
                 <p className="text-[#5b1219] text-xl font-semibold">{year}</p>
               </div>
               <p className="text-white font-typologic tracking-wider font-bold text-6xl lg:text-8xl">
-                Tashabite
+                More Than Conquerors
               </p>
             </div>
             <hr className="text-white w-[30%]" />
-            <div className="flex font-sf-pro flex-col mt-8 md:mt-0 lg:w-[40%]">
+            <div className="flex font-sf-pro flex-col mt-8 md:mt-0">
               <p className="font-semibold text-lg lg:text-2xl text-white">
-                Tashabite is a fast-food brand that delivers freshly prepared,
-                flavorful, and satisfying meals to a youthful urban audience.
-                The brand stands for quick service, great taste, and an
-                expressive personality that connects with everyday Nigerian
-                street energy and slang.
+                More Than Conquerors is the official brand identity created for
+                a university&apos;s graduating set. The theme captures the
+                collective spirit of perseverance, achievement, and triumph that
+                defines the graduates’ journey. The brand represents pride,
+                unity, and the sense of victory that comes from overcoming
+                academic and personal challenges.
               </p>
             </div>
-            <div className="flex gap-4 mt-2 flex-wrap">
+            <div className="flex font-sf-pro gap-4 mt-2 flex-wrap">
               <div className="rounded-full p-3 bg-white/20">
                 <p className="font-semibold text-black">Victory</p>
               </div>
@@ -67,11 +68,12 @@ const Page = () => {
           <span className="font-medium">Know More</span>
         </p>
         <div className="space-y-8">
-          <h1 className="font-bold text-3xl my-0 md:my-10 lg:my-0 md:text-5xl pb-4">
+          <h1 className="font-bold text-3xl my-0 md:my-10 lg:my-0 md:text-4xl pb-4">
             <span className="pl-28">
-              Inspired by street food culture, bold graphics, and a sense of
-              playful energy, the design uses a high-contrast color palette of
-              black and yellow to immediately grab attention®
+              The design captures the collective spirit of perseverance,
+              achievement, and triumph that defines the graduates’ journey. It
+              is designed to represent pride, unity, and the sense of victory
+              that comes from overcoming academic and personal challenges.
             </span>
           </h1>
           <div className="flex flex-col md:flex-row gap-4 mt-4">
@@ -88,12 +90,14 @@ const Page = () => {
                 Best Rated Portfolio Around Everywhere
               </p>
               <p className="font-medium">
-                The inspiration for Tashabite came from the vibrancy and humor
-                embedded in Nigerian pop culture. I wanted to capture the
-                spontaneous joy around food, how it brings people together and
-                becomes a part of everyday banter. The visual language draws
-                from local slang, bold typography, and playful illustrations to
-                create a brand that feels familiar, authentic, and fun.
+                The inspiration for this identity came from the phrase More Than
+                Conquerors, which signifies strength, resilience, and purpose. I
+                wanted to translate that message into a timeless visual identity
+                that celebrates both the intellectual and emotional journey of
+                the graduating class. The concept draws from classical symbolism
+                (the warrior’s helmet) to represent courage and excellence,
+                while the refined typography conveys prestige and
+                accomplishment.
               </p>
             </div>
           </div>
@@ -101,10 +105,10 @@ const Page = () => {
       </div>
       <div className="relative min-h-[75vh] lg:min-h-screen rounded-lg mx-8 md:my-24">
         <Image
-          src={"/Coffee_Cup.png"}
+          src={"/mtc_inspo.png"}
           alt="Product"
           fill
-          className="object-contain md:object-cover object-center rounded-lg"
+          className="object-contain lg:object-cover object-center rounded-lg"
           quality={100}
           priority
         />
@@ -121,19 +125,20 @@ const Page = () => {
         </p>
         <div className="space-y-8">
           <h1 className="font-bold text-3xl my-0 md:my-10 lg:my-0 pb-4">
-            Developing a distinct brand identity capable of standing out in a
-            highly competitive market , which required the difficult task of
-            balancing visual sophistication and a premium look
+            Creating a single, cohesive identity that could visually define the
+            graduates&apos; theme across all touchpoints, which required a bold,
+            inspirational logo system versatile enough for applications.
           </h1>
           <div className="flex flex-col md:flex-row gap-4 mt-4">
             <div className="space-y-4">
               <p className="font-medium">
-                The client needed a distinct identity that would stand out in a
-                highly competitive fast-food market. They wanted a brand that
-                looked premium but still appealed to a younger demographic,
-                something modern, lively, and unmistakably local. The challenge
-                was to balance visual sophistication with the raw energy and
-                humor of street culture.
+                The graduating set required a cohesive identity that could
+                visually define their theme across all touchpoints. They needed
+                a logo system that felt bold and inspirational yet adaptable
+                enough for diverse applications — from clothing and souvenirs to
+                digital and print materials. The challenge was to create
+                something that resonated with both the solemnity of graduation
+                and the pride of achievement.
               </p>
               <Number id={"1"} totalNum={4} />
             </div>
@@ -142,10 +147,10 @@ const Page = () => {
       </div>
       <div className="relative min-h-[75vh] lg:min-h-screen rounded-lg mx-8 md:my-24">
         <Image
-          src={"/tashabite_problem.png"}
+          src={"/mtc_problem.png"}
           alt="Product"
           fill
-          className="object-contain md:object-cover object-center rounded-lg"
+          className="object-contain object-center rounded-lg"
           quality={100}
           priority
         />
@@ -162,22 +167,21 @@ const Page = () => {
         </p>
         <div className="space-y-8">
           <h1 className="font-bold text-3xl my-0 md:my-10 lg:my-0 pb-4">
-            Implementing a comprehensive visual identity system that
-            successfully bridges youthful playfulness with professional
-            consistency , utilizing a logotype with confident strokes and a bold
-            yellow and deep black color palette for instant recognition.
+            Developing a unified branding system centered on a symbolic logo
+            featuring a stylized warrior helmet and elegant serif typography,
+            designed in three flexible forms (main logo, wordmark, and symbol)
           </h1>
           <div className="flex flex-col md:flex-row gap-4 mt-4">
             <div className="space-y-4">
               <p className="font-medium">
-                I developed a visual identity system that bridges youthful
-                playfulness with professional consistency. The logotype combines
-                smooth curves and confident strokes to express approachability
-                and reliability. Supporting graphic elements such as
-                illustrations, catchy phrases, and pattern compositions extend
-                the brand’s personality across packaging and marketing
-                materials. The color palette of bold yellow and deep black
-                creates strong visual contrast and instant recognition.
+                I developed a unified branding system built around a symbolic
+                logo featuring a stylized warrior helmet and elegant serif
+                typography. The logo was designed in three forms a main logo,
+                wordmark, and symbol to ensure consistency and versatility. The
+                color palette of deep blue, regal gold, and clean white reflects
+                strength, royalty, and purity, aligning perfectly with the
+                celebratory tone of the event. The Trajan Pro typeface further
+                reinforces a sense of tradition and prestige.
               </p>
               <Number id={"2"} totalNum={4} />
             </div>
@@ -186,10 +190,10 @@ const Page = () => {
       </div>
       <div className="relative min-h-[75vh] lg:min-h-screen rounded-lg mx-8 md:my-24">
         <Image
-          src={"/tashabite_solution.png"}
+          src={"/mtc_solution.png"}
           alt="Product"
           fill
-          className="object-contain md:object-cover object-center rounded-lg"
+          className="object-contain object-center rounded-lg"
           quality={100}
           priority
         />
@@ -206,22 +210,23 @@ const Page = () => {
         </p>
         <div className="space-y-8">
           <h1 className="font-bold text-3xl my-0 md:my-10 lg:my-0 pb-4">
-            Tashabite celebrates the joy and expression that comes with enjoying
-            good pastries. Every element, from the slang-filled pattern design
-            to the expressive typography, communicates energy, satisfaction, and
-            cultural relevance.
+            More Than Conquerors is built around the idea of Triumph Through Perseverance, with every
+            element, including the gold accents, classical letterforms, and the
+            warrior symbol, specifically designed to evoke a strong sense of
+            honor and victory.
           </h1>
           <div className="flex flex-col md:flex-row gap-4 mt-4">
             <div className="space-y-4">
               <p className="font-medium">
-                The concept centers on{" "}
-                <span className="italic">“Every bite, a Vibe.” </span>
-                Tashabite’s brand identity celebrates the joy and expression
-                that comes with enjoying good pastries. From the slang-filled
-                pattern design to the expressive typography, every element
-                communicates energy, satisfaction, and cultural relevance. The
-                goal was to make the brand feel like an experience. Fresh, bold,
-                and proudly local.
+                The concept behind{" "}
+                <span className="italic">More Than Conquerors</span> centers on
+                triumph through perseverance. Every element (from the gold
+                accents to the classical letterforms) was designed to evoke a
+                sense of honor and victory. The identity celebrates not just
+                academic success but the personal growth and resilience that
+                shaped the graduating set&apos;s journey. The final design
+                creates a lasting emblem of pride and excellence for the class
+                it represents.
               </p>
               <Number id={"3"} totalNum={4} />
             </div>
@@ -230,10 +235,10 @@ const Page = () => {
       </div>
       <div className="relative min-h-[75vh] lg:min-h-screen rounded-lg mx-8 md:my-24">
         <Image
-          src={"/tashabite_concept.png"}
+          src={"/mtc_concept.png"}
           alt="Product"
           fill
-          className="object-contain md:object-cover object-center rounded-lg"
+          className="object-contain object-center rounded-lg"
           quality={100}
           priority
         />

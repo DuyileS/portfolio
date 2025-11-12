@@ -213,7 +213,7 @@ export const features = [
   {
     id: "1",
     name: "Tashabite",
-    img: "/Coffee_Cup.png",
+    img: "/tashabite_problem.png",
     themes: ["Food", "Culture"], 
     href: "/projects/tashabite",
     year: "2024"
@@ -221,7 +221,7 @@ export const features = [
   {
     id: "2",
     name: "More Than Conquerors",
-    img: "/BlackLogo.png",
+    img: "/mtc_preview.png",
     themes: ["Victory", "Legacy"], 
     href: "/projects/more-than-conquerors",
     year: "2024"
