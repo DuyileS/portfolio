@@ -48,7 +48,7 @@ const ScrollRevealBlocks: React.FC = () => {
       x: 0,
       transition: {
         duration: 0.5,
-        ease: [0.65, 0, 0.35, 1], // Custom easing for smooth motion
+        ease: [0.65, 0, 0.35, 1] as const, // Custom easing for smooth motion
       }
     },
     exit: {
@@ -56,7 +56,7 @@ const ScrollRevealBlocks: React.FC = () => {
       x: '100%',
       transition: {
         duration: 0.5,
-        ease: [0.65, 0, 0.35, 1],
+        ease: [0.65, 0, 0.35, 1] as const,
         // Delay before animating out
         delay: 0.2
       }
@@ -91,7 +91,7 @@ const ScrollRevealBlocks: React.FC = () => {
           <p className="text-lg leading-relaxed opacity-90">
             This technique is perfect for adding visual interest to your website and
             creating memorable moments as users scroll through your content. The animation
-            uses Framer Motion's powerful variants system to coordinate the timing of
+            uses Framer Motion&apos;s powerful variants system to coordinate the timing of
             multiple elements.
           </p>
           <div className="mt-8 grid grid-cols-3 gap-4">
