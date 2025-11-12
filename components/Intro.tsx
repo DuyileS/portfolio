@@ -49,7 +49,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <hr className="mt-30 text-gray-200" />
+      <hr className="hidden lg:block mt-30 text-gray-200" />
     </div>
   );
 };
