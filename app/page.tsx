@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from "react";
 import ApproachSection from "@/components/ApproachSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -9,10 +10,38 @@ import StatsFacts from "@/components/StatsFacts";
 import Testimonial from "@/components/Testimonial";
 import { homeDescription } from "@/constants";
 import Image from "next/image";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Bars from "@/components/Bars/bars";
+import FeaturedPortfolio from "@/components/FeaturedPortfolio";
+
+
 
 export default function Home() {
-
+  const barsRef = useRef<HTMLDivElement[]>([]);
+  const barsSectionRef = useRef<HTMLDivElement>(null);
   const year = new Date().getFullYear();
+
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const bars = barsRef.current;
+
+    const barsTimeline = gsap.timeline();
+
+    barsTimeline
+      .set(bars, { scaleY: 0, transformOrigin: "bottom" })
+      .to(bars, { scaleY: 1 });
+
+    ScrollTrigger.create({
+      trigger: barsSectionRef.current,
+      start: "top bottom",
+      end: "top top",
+      scrub: true,
+      animation: barsTimeline,
+    });
+  });
 
   return (
     <>
@@ -47,12 +76,25 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Intro />
-      <ApproachSection />
-      <StatsFacts />
-      <Testimonial />
-      <Contact />
-      <Footer />
+      <section
+        ref={barsSectionRef}
+        className="relative w-full h-screen custom-flex-center bg-background"
+      >
+        <Bars
+          color="white"
+          barsRef={barsRef}
+          heights={[74, 102, 167, 93, 46]}
+          className="origin-bottom scale-y-0" // Initial State
+          containerClassName="absolute top-0 left-0 right-0 w-full h-max flex items-end -translate-y-[99%]"
+        />
+        <Intro />
+        <ApproachSection />
+        <FeaturedPortfolio />
+        <StatsFacts />
+        <Testimonial />
+        <Contact />
+        <Footer />
+      </section>
     </>
   );
 }

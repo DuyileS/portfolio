@@ -139,30 +139,91 @@ export const testimonials = [
 export const works = [
   {
     id: "1",
-    name: "Music",
-    img: "/music.png",
-    themes: ["Artistic", "Inspiration"], 
+    name: "Ascend",
+    img: "/ascend.png",
+    themes: ["Growth", "Ambition"], 
     year: "2022"
   },
   {
     id: "2",
-    name: "Knowledge",
-    img: "/knowledge.png",
-    themes: ["Facts", "Learning"], 
+    name: "Destiny",
+    img: "/destiny.png",
+    themes: ["Fate", "Purpose"], 
     year: "2023"
   },
   {
     id: "3",
-    name: "Wisdom",
-    img: "/wisdom.png",
-    themes: ["Philosophy", "Growth"], 
+    name: "Earth",
+    img: "/earth.png",
+    themes: ["Nature", "Environment"], 
     year: "2024"
   },
   {
     id: "4",
-    name: "Wildlife",
-    img: "/wildlife.png",
-    themes: ["Nature", "Conservation"], 
+    name: "Find Your Light",
+    img: "/find-your-light.png",
+    themes: ["Hope", "Self-Discovery"], 
     year: "2025"
+  },
+  {
+    id: "5",
+    name: "Flourish in Pain",
+    img: "/flourish-in-pain.png",
+    themes: ["Resilience", "Transformation"], 
+    year: "2025"
+  },
+  {
+    id: "6",
+    name: "Peace",
+    img: "/peace.png",
+    themes: ["Tranquility", "Harmony"], 
+    year: "2025"
+  },
+  {
+    id: "7",
+    name: "Perception",
+    img: "/perception.png",
+    themes: ["Awareness", "Psychology"], 
+    year: "2025"
+  },
+  {
+    id: "8",
+    name: "Separation",
+    img: "/separation.png",
+    themes: ["Isolation", "Loss"], 
+    year: "2025"
+  },
+  {
+    id: "9",
+    name: "Sonder",
+    img: "/sonder.png",
+    themes: ["Empathy", "Humanity"], 
+    year: "2025"
+  },
+  {
+    id: "10",
+    name: "Until My Last Breath",
+    img: "/until.png",
+    themes: ["Determination", "Passion"], 
+    year: "2025"
+  },
+]
+
+export const features = [
+  {
+    id: "1",
+    name: "Tashabite",
+    img: "/Coffee_Cup.png",
+    themes: ["Food", "Culture"], 
+    href: "/projects/tashabite",
+    year: "2024"
+  },
+  {
+    id: "2",
+    name: "More Than Conquerors",
+    img: "/BlackLogo.png",
+    themes: ["Victory", "Legacy"], 
+    href: "/projects/more-than-conquerors",
+    year: "2024"
   },
 ]

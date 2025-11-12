@@ -27,7 +27,7 @@ const Page = () => {
                 <span className="text-white">&copy;</span>
                 {year}
               </p>
-              <p className="text-white font-typologic tracking-wider font-bold text-8xl lg:text-8xl">
+              <p className="text-white font-typologic tracking-wider font-bold text-6xl lg:text-8xl">
                 Projects<span className="text-[#5b1219]">*</span>
               </p>
             </div>

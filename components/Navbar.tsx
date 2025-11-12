@@ -64,7 +64,7 @@ const Navbar = () => {
       >
         <ul className="flex flex-col items-center gap-6 py-6 my-12">
           <li><Link href="/" onClick={() => setIsOpen(false)}>Home</Link></li>
-          <li><Link href="/works" onClick={() => setIsOpen(false)}>Works</Link></li>
+          <li><Link href="/projects" onClick={() => setIsOpen(false)}>Projects</Link></li>
           <li><Link href="/about" onClick={() => setIsOpen(false)}>About</Link></li>
           <li><Link href="/contact" onClick={() => setIsOpen(false)}><AnimatedButton /></Link></li>
         </ul>
