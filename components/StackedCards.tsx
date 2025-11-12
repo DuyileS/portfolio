@@ -1,12 +1,26 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import WorkCard from "./WorkCard";
 import { works } from "@/constants";
 
 export default function StackedWorks() {
   const ref = useRef(null);
+  const [windowHeight, setWindowHeight] = useState(0);
+
+  useEffect(() => {
+    // Set window height only on client side
+    setWindowHeight(window.innerHeight);
+    
+    // Handle window resize
+    const handleResize = () => {
+      setWindowHeight(window.innerHeight);
+    };
+    
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -14,10 +28,10 @@ export default function StackedWorks() {
   });
 
   // Each row animates in sequence with pauses to view them
-  const y2 = useTransform(scrollYProgress, [0.15, 0.3], [window.innerHeight, 0]);
-  const y3 = useTransform(scrollYProgress, [0.35, 0.5], [window.innerHeight, 0]);
-  const y4 = useTransform(scrollYProgress, [0.55, 0.7], [window.innerHeight, 0]);
-  const y5 = useTransform(scrollYProgress, [0.75, 0.9], [window.innerHeight, 0]);
+  const y2 = useTransform(scrollYProgress, [0.15, 0.3], [windowHeight, 0]);
+  const y3 = useTransform(scrollYProgress, [0.35, 0.5], [windowHeight, 0]);
+  const y4 = useTransform(scrollYProgress, [0.55, 0.7], [windowHeight, 0]);
+  const y5 = useTransform(scrollYProgress, [0.75, 0.9], [windowHeight, 0]);
 
   const row1 = works.slice(0, 2);
   const row2 = works.slice(2, 4);
