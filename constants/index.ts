@@ -96,43 +96,43 @@ export const stats = [
 export const testimonials = [
   {
     id: "1",
-    img: "/man-on-red.png", 
-    name: "Ayo Balogun",
-    job: "Creative Director",
-    placeOfWork: "Lagos Digital Hub",
-    review: "The designer consistently delivers visually stunning work, that captures the essence of the Nigerian brand aesthetic. Their turnaround time for complex projects, like our recent annual report, was exceptionally fast and professional."
+    img: "/silver-lining.png", 
+    name: "Evert Kotze",
+    job: "Founder",
+    placeOfWork: "Silver Lining Apparel",
+    review: "Working with David has been an absolute pleasure. From the very beginning, he understood our vision for Silver Lining and brought it to life in ways we couldn’t have imagined. His creativity, dedication, and talent to turn even the simplest brief into extraordinary art truly set him apart."
   },
   {
     id: "2",
-    img: "/woman-on-chair.png", 
-    name: "Hadiza Musa",
-    job: "Small Business Owner",
-    placeOfWork: "Arewa Textiles Market, Kano",
-    review: "I needed a logo and packaging that respected my cultural background while looking modern. This designer blended the traditional Arewa patterns perfectly. My product sales have significantly improved thanks to the strong visual branding."
+    img: "/tashabite_problem.png", 
+    name: "Natasha Cole",
+    job: "Manager",
+    placeOfWork: "Tashabite",
+    review: "Working on this project was a truly inspiring experience that showed how creativity can bring purpose to life. Collaborating with David made every stage feel intentional and expressive. His deep understanding of vision and his thoughtful approach to design turned our concept into something powerful and unforgettable."
   },
   {
     id: "3",
-    img: "/man-on-seat.png", 
-    name: "Chinedu Okoro",
-    job: "Marketing Manager",
-    placeOfWork: "FinTech Startup, Lekki",
-    review: "David's work on our UI/UX assets was phenomenal. He has a deep understanding of mobile-first design and made our application intuitive for the Nigerian user. The revision process was smooth and collaborative."
+    img: "/mtc_preview.png", 
+    name: "Faith Agbara",
+    job: "President",
+    placeOfWork: "More Than Conquerors Graduating Set",
+    review: "Working with David on this project reminded me of how powerful creative collaboration can be. He was able to capture the true essence of who we are through design that speaks boldly of our victory and shared purpose.This brand reflects everything we stood for as a set, bold, driven, and victorious. It represents more than a name; it is a statement of identity. We conquered not just academic hurdles but fear, doubt, and limitation."
   },
   {
     id: "4",
-    img: "/woman-on-green.png", 
-    name: "Tola Adebayo",
+    img: "/lally.jpg", 
+    name: "Lally Randhawa",
     job: "Social Media Strategist",
-    placeOfWork: "Pulse Ng Media Group",
-    review: "The quality of the graphics for our daily content is always high-resolution and optimized for all platforms. The designer's ability to create viral-ready content and infographics, on tight deadlines is a major asset to our newsroom."
+    placeOfWork: "Marketing",
+    review: "David is a true professional! He went above and beyond what we asked for, not only delivering on every expectation, but consistently exceeding them with his innovative ideas and exceptional attention to detail. His proactive approach and uncanny foresight made the entire project a seamless success."
   },
   {
     id: "5",
-    img: "/man-on-street.png", 
-    name: "Imoh Edet",
-    job: "Brand Strategist",
-    placeOfWork: "Major Oil & Gas Firm, PHC",
-    review: "Managing corporate branding can be tedious, but this designer ensured consistency across all our collaterals, from presentations to billboards. Their professionalism and attention to detail are truly commendable."
+    img: "/tbenz.jpg", 
+    name: "Daniel Fait",
+    job: "Model",
+    placeOfWork: "Creative Director",
+    review: "Outstanding work! The level of detail and creativity he brought to the table was truly game-changing. I'm extremely grateful for his hard work and commitment to excellence, and I'll definitely be working with him again on future projects. He has proven himself to be an invaluable asset to my brand."
   }
 ];
 
