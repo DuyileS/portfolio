@@ -40,7 +40,7 @@ const FeaturedStack = () => {
           designs.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full lg:max-w-[60%] gap-4 mt-4 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full lg:max-w-[60%] 2xl:max-w-[50%] gap-4 mt-4 mx-auto">
         {tools.map((tool) => (
           <Card
             key={tool.id}

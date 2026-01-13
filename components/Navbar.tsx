@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative flex font-sf-pro justify-between items-center z-15">
+    <nav className="relative flex font-sf-pro justify-between items-center z-15 max-w-7xl 2xl:max-w-[1400px] mx-auto w-full">
       <Link href={"/"}>
         <Image
           src={"/logo.png"}
@@ -22,7 +22,7 @@ const Navbar = () => {
         />
       </Link>
       <div className="hidden md:flex items-center">
-        <ul className="flex justify-center gap-16 mr-16">
+        <ul className="flex justify-center gap-8 lg:gap-12 2xl:gap-16 mr-8 lg:mr-12 2xl:mr-16">
           {links.map((link) => {
             const isActive = pathname === link.href;
 

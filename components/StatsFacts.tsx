@@ -6,30 +6,31 @@ import OdometerCounter from "./OdometerCounter";
 const StatsFacts = () => {
   return (
     <div className="h-auto font-sf-pro lg:min-h-screen 2xl:min-h-0 2xl:h-full py-4 px-8">
-      <hr className="mt-30 text-gray-200" />
-      <div className="grid grid-cols-1 lg:grid-cols-[30%_70%] gap-1 items-start mt-8">
-        <p className="flex items-center">
-          <span>
-            <Icon
-              icon="mdi:square-rounded"
-              className="w-4 h-4 text-[#5b1219]"
-            />
-          </span>{" "}
-          <span className="font-medium">Stats & Facts</span>
-        </p>
-        <div className="space-y-8">
-          <h1 className="font-bold text-xl md:text-5xl md:mt-8">
-            <span className="pl-24">
-              I take pride in creating solutions that are not only visually
-              stunning® but also highly functional. Every number tells a story,
-              and I’m excited to bring that same dedication.
-            </span>
-          </h1>
+      <div className="max-w-7xl 2xl:max-w-[1400px] mx-auto">
+        <hr className="mt-30 text-gray-200" />
+        <div className="grid grid-cols-1 lg:grid-cols-[30%_70%] 2xl:grid-cols-[25%_75%] gap-1 items-start mt-8">
+          <p className="flex items-center">
+            <span>
+              <Icon
+                icon="mdi:square-rounded"
+                className="w-4 h-4 text-[#5b1219]"
+              />
+            </span>{" "}
+            <span className="font-medium">Stats & Facts</span>
+          </p>
+          <div className="space-y-8">
+            <h1 className="font-bold text-xl md:text-5xl 2xl:text-6xl md:mt-8">
+              <span className="pl-24 2xl:pl-32 2xl:max-w-4xl block">
+                I take pride in creating solutions that are not only visually
+                stunning® but also highly functional. Every number tells a story,
+                and I'm excited to bring that same dedication.
+              </span>
+            </h1>
+          </div>
         </div>
-      </div>
-      <div className="flex flex-col md:flex-row lg:flex-row gap-6 my-24">
-        {stats.map((stat) => (
-            <div key={stat.id} className="flex flex-col space-y-6 w-full lg:px-12">
+        <div className="flex flex-col md:flex-row lg:flex-row gap-6 my-24 max-w-5xl 2xl:max-w-6xl">
+          {stats.map((stat) => (
+              <div key={stat.id} className="flex flex-col space-y-6 w-full lg:px-12 2xl:px-16">
                 <OdometerCounter value={stat.number} suffix={stat.suffix}/>
                 <hr className="text-gray-200" />
                 <div className="flex flex-col gap-1">
@@ -38,8 +39,9 @@ const StatsFacts = () => {
                 </div>
             </div>
         ))}
+        </div>
+        <hr className="mt-30 text-gray-200" />
       </div>
-      <hr className="mt-30 text-gray-200" />
     </div>
   );
 };

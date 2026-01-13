@@ -20,23 +20,25 @@ const Page = () => {
           priority
         />
         <div className="relative z-10 px-8 py-12 text-white">
-          <Navbar />
-          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center pt-80 md:pt-80 lg:pt-64">
-            <div className="flex flex-col font-typologic gap-1">
-              <p className="font-semibold text-2xl">
-                <span className="text-white">&copy;</span>
-                {year}
-              </p>
-              <p className="text-white font-typologic tracking-wider font-bold text-6xl lg:text-8xl">
-                Projects<span className="text-[#5b1219]">*</span>
-              </p>
-            </div>
-            <div className="flex font-sf-pro flex-col mt-8 md:mt-0 lg:w-[40%]">
-              <p className="font-semibold text-lg lg:text-2xl text-white">
-                <span className="lg:pl-24">From pixel-perfect visual identities and immersive experiences
-                to print-ready collateral, every project showcases my passion
-                for creative innovation.</span>
-              </p>
+          <div className="max-w-7xl 2xl:max-w-[1400px] mx-auto">
+            <Navbar />
+            <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center pt-80 md:pt-80 lg:pt-64">
+              <div className="flex flex-col font-typologic gap-1">
+                <p className="font-semibold text-2xl">
+                  <span className="text-white">&copy;</span>
+                  {year}
+                </p>
+                <p className="text-white font-typologic tracking-wider font-bold text-6xl lg:text-8xl 2xl:text-9xl">
+                  Projects<span className="text-[#5b1219]">*</span>
+                </p>
+              </div>
+              <div className="flex font-sf-pro flex-col mt-8 md:mt-0 lg:w-[40%] 2xl:max-w-lg">
+                <p className="font-semibold text-lg lg:text-2xl 2xl:text-3xl text-white">
+                  <span className="lg:pl-24 2xl:pl-32">From pixel-perfect visual identities and immersive experiences
+                  to print-ready collateral, every project showcases my passion
+                  for creative innovation.</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>

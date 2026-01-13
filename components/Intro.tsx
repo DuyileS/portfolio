@@ -6,23 +6,24 @@ import Link from "next/link";
 const Intro = () => {
   return (
     <div className="h-full font-sf-pro lg:min-h-screen 2xl:min-h-0 2xl:h-full p-4">
-      <hr className="text-gray-200" />
-      <div className="grid grid-cols-1 lg:grid-cols-[30%_70%] gap-2 items-start mt-8">
-        <p className="flex items-center">
-          <span>
-            <Icon
-              icon="mdi:square-rounded"
-              className="w-4 h-4 text-[#5b1219]"
-            />
-          </span>{" "}
-          <span className="font-medium">Hey, Just An Intro</span>
-        </p>
-        <div className="space-y-8">
-          <h1 className="font-bold text-3xl my-0 md:my-10 lg:my-0 md:text-5xl pb-4">
-            <span className="pl-24">A digital designer based in Lagos, passionate about creating
-            immersive visual experiences. From crafting realistic renderings to
-            dynamic animations and interactions.®</span>
-          </h1>
+      <div className="max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 2xl:px-8">
+        <hr className="text-gray-200" />
+        <div className="grid grid-cols-1 lg:grid-cols-[30%_70%] 2xl:grid-cols-[25%_75%] gap-2 items-start mt-8">
+          <p className="flex items-center">
+            <span>
+              <Icon
+                icon="mdi:square-rounded"
+                className="w-4 h-4 text-[#5b1219]"
+              />
+            </span>{" "}
+            <span className="font-medium">Hey, Just An Intro</span>
+          </p>
+          <div className="space-y-8">
+            <h1 className="font-bold text-3xl my-0 md:my-10 lg:my-0 md:text-5xl 2xl:text-6xl pb-4">
+              <span className="pl-24 2xl:pl-32 2xl:max-w-4xl block">A digital designer based in Lagos, passionate about creating
+              immersive visual experiences. From crafting realistic renderings to
+              dynamic animations and interactions.®</span>
+            </h1>
           <Link href={"/contact"}>
              <AnimatedButton />
           </Link>
@@ -50,6 +51,7 @@ const Intro = () => {
         </div>
       </div>
       <hr className="hidden lg:block mt-30 text-gray-200" />
+      </div>
     </div>
   );
 };

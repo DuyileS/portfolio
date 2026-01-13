@@ -8,40 +8,41 @@ const FeaturedPortfolio = () => {
 
   return (
     <div className="lg:min-h-screen font-sf-pro 2xl:min-h-0 2xl:h-full p-4">
-      <hr className="text-gray-200" />
-      <div className="flex justify-between mb-8 my-4">
-        <p className="flex items-center">
-          <span>
-            <Icon
-              icon="mdi:square-rounded"
-              className="w-4 h-4 text-[#5b1219]"
-            />
-          </span>{" "}
-          <span className="font-medium">Featured Works</span>
-        </p>
-        <p className="font-semibold text-2xl">
-          <span>&copy;</span>
-          {year}
-        </p>
-      </div>
-      <div className="flex justify-center mt-24">
-        <div className="flex rounded-md bg-red-200 w-32 h-8 justify-center text-center items-center gap-2 p-2">
-          <Icon
-            icon="ph:stack-fill"
-            className="w-4 h-4 text-[#5b1219] font-bold"
-          />
-          <p className="text-[#5b1219] font-semibold">Portfolio</p>
+      <div className="max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 2xl:px-8">
+        <hr className="text-gray-200" />
+        <div className="flex justify-between mb-8 my-4">
+          <p className="flex items-center">
+            <span>
+              <Icon
+                icon="mdi:square-rounded"
+                className="w-4 h-4 text-[#5b1219]"
+              />
+            </span>{" "}
+            <span className="font-medium">Featured Works</span>
+          </p>
+          <p className="font-semibold text-2xl">
+            <span>&copy;</span>
+            {year}
+          </p>
         </div>
-      </div>
-      <div className="flex flex-col mb-4">
-        <h1 className="text-center font-bold text-6xl mt-8">Featured Portfolio®</h1>
-        <p className="text-center mt-4 text-gray-500 font-medium">
-         Explore a collection of high-quality, innovative designs crafted 
-         to elevate brands and captivate <br className="hidden lg:block" /> audiences. Each project 
-         reflects my commitment to creativity and excellence.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-6">
+        <div className="flex justify-center mt-24">
+          <div className="flex rounded-md bg-red-200 w-32 h-8 justify-center text-center items-center gap-2 p-2">
+            <Icon
+              icon="ph:stack-fill"
+              className="w-4 h-4 text-[#5b1219] font-bold"
+            />
+            <p className="text-[#5b1219] font-semibold">Portfolio</p>
+          </div>
+        </div>
+        <div className="flex flex-col mb-4">
+          <h1 className="text-center font-bold text-6xl 2xl:text-7xl mt-8">Featured Portfolio®</h1>
+          <p className="text-center mt-4 text-gray-500 font-medium max-w-3xl mx-auto">
+           Explore a collection of high-quality, innovative designs crafted 
+           to elevate brands and captivate <br className="hidden lg:block" /> audiences. Each project 
+           reflects my commitment to creativity and excellence.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-6 2xl:max-w-5xl 2xl:mx-auto">
         {features.map((feature) => (
           <React.Fragment key={feature.id}>
             <WorkCard
@@ -53,6 +54,7 @@ const FeaturedPortfolio = () => {
             />
           </React.Fragment>
         ))}
+        </div>
       </div>
     </div>
   );

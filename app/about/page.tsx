@@ -20,22 +20,24 @@ const Page = () => {
           priority
         />
         <div className="relative z-10 px-8 py-12 text-white">
-          <Navbar />
-          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center pt-80 md:pt-80 lg:pt-64">
-            <div className="flex flex-col gap-1">
-              <p className="font-semibold font-typologic text-2xl">
-                <span className="text-white">&copy;</span>
-                {year}
-              </p>
-              <p className="text-white font-typologic tracking-wider font-bold text-4xl md:text-6xl lg:text-[80px]">
-                About David<span className="text-[#5b1219]">*</span>
-              </p>
-            </div>
-            <div className="flex flex-col font-sf-pro mt-8 md:mt-0 lg:w-1/3">
-              <p className="font-semibold text-lg md:text-xl lg:text-2xl text-white">
-                <span className="lg:pl-24">From eye-catching visuals to meaningful design stories, I bring
-                ideas to life with creativity and intention.</span>
-              </p>
+          <div className="max-w-7xl 2xl:max-w-[1400px] mx-auto">
+            <Navbar />
+            <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center pt-80 md:pt-80 lg:pt-64">
+              <div className="flex flex-col gap-1">
+                <p className="font-semibold font-typologic text-2xl">
+                  <span className="text-white">&copy;</span>
+                  {year}
+                </p>
+                <p className="text-white font-typologic tracking-wider font-bold text-4xl md:text-6xl lg:text-[80px] 2xl:text-[100px]">
+                  About David<span className="text-[#5b1219]">*</span>
+                </p>
+              </div>
+              <div className="flex flex-col font-sf-pro mt-8 md:mt-0 lg:w-1/3 2xl:max-w-md">
+                <p className="font-semibold text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-white">
+                  <span className="lg:pl-24 2xl:pl-32">From eye-catching visuals to meaningful design stories, I bring
+                  ideas to life with creativity and intention.</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
